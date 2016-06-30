@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Habrahabr</title>
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <header>
+    <header class="header-desk">
        <div class="header-nav">
             <a href="#">TM Feed</a>
             <a href="#">Хабрахабр</a>
@@ -24,17 +24,23 @@
            </span>
        </div>
     </header>
-    
+    <header class="header-mob">
+            <a href="" class="logo-mob"></a>
+            <div class="tabs-mob">
+                <a href="" class="tabs-mob-a"> Интересные</a>
+            </div>
+            <a href="" class="nav-icon"></a>     
+    </header>
     <section class="container">
         <aside id="navbar">
-            <div class="nav-panel">
-                <a href="index.html" class="logo"></a>
+           <nav class="nav-panel">
+                <a href="index.html" class="logo"> </a>
                 <a href="#" class="users" title="Users"><img src="img/icons/user.svg" alt=""></a>
                 <a href="#" class="tracker" title="Трекер"><img src="img/icons/bank%20note.svg" alt=""></a>
                 <a href="#" class="menu" title="Меню"><img src="img/icons/menu%20circle.svg" alt=""></a>
                 <a href="#" class="input_smth"><img src="img/icons/pencil%20ruler.svg" alt="" title="Новая публикация"></a>
                 <a href="#" class="settings" title="Настройки"><img src="img/icons/settings.svg" alt=""></a>
-            </div>
+            </nav>
         </aside>
         <section class="inner">
            <div class="page-header">

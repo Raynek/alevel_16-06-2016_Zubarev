@@ -27,7 +27,7 @@ body {
 	line-height: 1;
 }
 ol, ul {
-	list-style: none;d
+	list-style: none;
 }
 blockquote, q {
 	quotes: none;
@@ -49,15 +49,22 @@ table {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+    
 
+   
 html , body{
-height: 100%;
+    height: 100%;
+
 }
+
 
 body{  
 	background: #e2e2e2;
     font-family: Verdana,sans-serif;
+}
 
+footer{
+    bottom: 0;
 }
 a{
 	text-decoration: none;
@@ -65,7 +72,7 @@ a{
 /*==========Header==============*/
 /*==============================*/
 
-header{
+.header-desk{
     background-color: #f2f2f2;
     height: 28px;
     border-bottom: 1px solid #bcc3ce;
@@ -74,6 +81,47 @@ header{
 	position: relative;
     }
 
+.header-mob{
+    background-color: #f2f2f2;
+    height: 7.5%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    display: none;
+}
+
+
+.logo-mob{
+    display: inline-block;
+    min-height: 100%;
+    min-width: 5%;
+    max-width: 10%;
+    background-image: url(https://habracdn.net/habr/images/1466438646/logo.svg?r=2);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.tabs.mob{
+    
+    height: 100%;
+    width: 100px;
+    }
+.tabs-mob a{
+    display: inline-block;
+    line-height: 250%;
+    color: #464646;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.nav-icon{
+    
+    min-height: 100%;
+    min-width: 5%;
+    background-image: url(img/icons/menu%20lines.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .header-nav{
     display: inline;
     margin-left: 10px;
@@ -121,9 +169,9 @@ header{
     text-align: left;
     padding: 0;
     border: 0;
-    min-width: 1024px;
-    max-width: 1440px;
-    height: 100%; 
+/*    min-width: 992px;*/
+/*    max-width: 1440px;*/
+ 
 }
 
 /*===============Navigation============*/
@@ -134,41 +182,48 @@ header{
     display: block;
 	top: 0;
     bottom: 0;
-	position:absolute;
+    position: absolute;
+    
 }
 
+
 .nav-panel{
+    position: fixed;
+    height: 100%;
     background-color: #f2f2f2;
-	height: 100%;
-	position:fixed;
-	}
+}
 
 .logo{
     display: block;
-    width: 71px;
-    height: 71px;
     background-image: url(https://habracdn.net/habr/images/1466438646/logo.svg?r=2);
     background-repeat: no-repeat;
+    width: 71px;
+    height: 71px;
 }
 
 .nav-panel a{
     display: block;
-    width: 71px;
     height: 71px;
+    width: 71px;
     line-height: 71px;
     border-bottom: 1px solid #ebeaea;
    
 }
-.nav-panel a:hover{
-    background-color: #eae8e8;
+
+.nav-panel a img{
+    margin: 35%;
 }
 
-.nav-panel img{
-    margin: 24px; 
+.nav-panel a:hover{
+    background-color: #eae8e8;
+    box-shadow: 0px 0px 7px 1px #b2a4a4;
 }
+
+ 
+
 .settings{
- 	position: absolute;
  	bottom: 3%;
+    position: absolute;
 }
 
 
@@ -184,7 +239,6 @@ header{
 /*=======================================*/
 .page-header{
 	display: flex;
-	-webkit-box-align: center;
 	align-items: center;
 	height: 70px;
 	white-space: nowrap;
@@ -229,6 +283,12 @@ header{
 
 }
 
+input:hover, input:focus, input[type=checkbox]:checked {
+		-webkit-box-shadow: 0px 0px 5px 0px rgba(94,124,195,1);
+		-moz-box-shadow: 0px 0px 5px 0px rgba(94,124,195,1);
+		box-shadow: 0px 0px 7px 1px rgba(94,124,195,1);
+}
+
 .search-form-btn {
     margin: 0 0 0 -5px;
     border: 1px solid #dbdbdb;
@@ -267,6 +327,8 @@ main{
 	box-sizing: border-box;
 }
 
+
+
 .tabs {
 	margin-bottom: 20px;
 	position: relative;
@@ -287,8 +349,8 @@ main{
 	box-sizing: border-box;
 }
 
-.tabs-menu a{
-	overflow: hidden;
+
+.tabs-menu a{	
     padding: 0;
     height: 35px;
     line-height: 35px;
@@ -300,18 +362,21 @@ main{
     border-right: 1px solid #e5e5e5;
     font-size: 13px;
 	box-sizing: border-box;
-	text-decoration: none;
+    transition: opacity 0.3s linear 0.4s;
+}
+.tabs-menu a:hover{
+    background-color: #6da3bd;
+    opacity: 0.6;   
 }
 
-.tabs-menu a:hover{
-	background-color: #6da3bd;
-}
 
 /*=============Posts============*/
 /*==============================*/
 
 .post {
 	margin-bottom: 40px;
+    min-width: 100%;
+    max-width: 100%;
 }
 
 .post-title{
@@ -393,7 +458,7 @@ main{
 
 .btn{
 	margin-right: 0;
-	color: #464646;
+	color: #464646; 
 	font-family: Arial, sans-serif;
 	display: inline-block;
 	vertical-align: middle;
@@ -409,10 +474,13 @@ main{
 	letter-spacing: .3px;
 	box-sizing: border-box;
 	margin-top: 20px;
+    transition: opacity 0.3s linear 0.4s;
 }
 
 .btn:hover{
 	background-color: #e2e2e2;
+    opacity: 0.5;
+    
 }
 
 .post-info-panel {
@@ -553,4 +621,67 @@ main{
 .sidebar-list-item-a:hover{
 	text-decoration: underline;
 	color: #6da3bd;
+}
+
+.wrapper {
+    overflow: hidden;
+}
+/*.wrapper:after{   
+content: ".";
+display: block;
+height: 0;
+clear: both;
+visibility: hidden;
+}*/
+
+@media (min-width: 320px) and (max-width: 975px){
+    .header-desk{
+        display: none;
+    }
+    
+    #navbar{
+        display: none;
+    }
+    
+    .inner {
+        padding: 0 0 1% 2%;
+    }
+    .tabs{
+        display: none;
+    }
+    .logo-mob{
+        max-width: 8%;
+        min-width: 70px;
+    }
+    
+    .header-mob{
+        display: flex;
+    }
+    
+    .post-content{
+        height: 300px;
+        text-overflow: clip;
+    }
+}
+
+
+@media (min-width: 320px) and (max-width: 750px){
+    .sidebar-right{
+        display: none;
+    }
+    
+    main{
+        padding-right: 0;
+    }
+    .page-header{
+        display: none;
+    }
+    .logo-mob{
+    max-width: 10%;
+        min-width: 50px;
+        }
+    .post-content{
+        text-overflow:ellipsis;
+        height: 200px;
+    }
 }
