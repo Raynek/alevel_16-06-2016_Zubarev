@@ -182,11 +182,11 @@ main p {
 }
 
 main:after {
-content: ".";
-display: block;
-height: 0;
-clear: both;
-visibility: hidden;
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
 }
 
 .course-data {
@@ -227,7 +227,7 @@ visibility: hidden;
 }
 
 .course-info .money{
-    background: url(/alvel/img/money.png) no-repeat 35px 25px;
+    background: url(/alevel_16-06-2016_Zubarev/alevel/img/money.png) no-repeat 35px 25px;
 }
 
 .course-info .course-info-item span:first-child {
@@ -236,15 +236,15 @@ visibility: hidden;
 }
 
 .course-info .duration{
-    background: url(/alvel/img/calendar.png) no-repeat 35px 25px;
+    background: url(/alevel_16-06-2016_Zubarev/alevel/img/calendar.png) no-repeat 35px 25px;
 }
 
 .course-info .data{
-    background: url(/alvel/img/desktop.png) no-repeat 75px 25px;
+    background: url(/alevel_16-06-2016_Zubarev/alevel/img/desktop.png) no-repeat 75px 25px;
 }
 
 .course-info .time{
-    background: url(/alvel/img/clock.png) no-repeat 75px 25px;
+    background: url(/alevel_16-06-2016_Zubarev/alevel/img/clock.png) no-repeat 75px 25px;
 }
 
 .course-info .data span:first-child, .time span:first-child{
@@ -263,7 +263,7 @@ visibility: hidden;
     color: #fff;
     height: 50px;
     line-height: 50px;
-    padding: 3px 10px;
+    padding: 0 10px;
     text-transform: uppercase;
     -webkit-transition: .3s;
     transition: .3s;
@@ -276,7 +276,6 @@ visibility: hidden;
     z-index: 2;
     box-shadow: 0 0 13.95px 1.05px rgba(0,0,0,.15);
 }
-
 
 .course-info-btn:hover{
     background-color: #0c9eaf;
@@ -363,7 +362,89 @@ visibility: hidden;
 }
 
 
+.form-inner p{
+    margin-bottom: 25px;
+    font-size: 1.8em;
+    text-align: center;
+    font-weight: 300;
+}
+
+.form-inner .form-input-field{
+    font-family: GothamPro;
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #82cdd5;
+    font-size: 32px;
+    outline: 0;
+}
+
+.red-span{
+    color: red;
+}
+
+.blue-span{
+    color:#0c9eaf;
+}
+
+.form-inner .field1{
+    width: 85%;
+}
+
+.form-inner .field2{
+    width: 60%;
+}
+
+.form-inner a{
+    display: inline-block;
+    background: #64c1cc;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 10px;
+    text-transform: uppercase;
+    -webkit-transition: .3s;
+    transition: .3s;
+    width: 360px;
+    text-align: center;
+    border: 1px solid #333;
+    box-shadow: 0 0 13.95px 1.05px rgba(0,0,0,.15);
+    font-size: 20px;
+}
+
+.form-inner a:hover{
+    background-color: #0c9eaf;
+}
 
 
+footer{
+    margin-top:80px;
+    position: relative;
+    margin-bottom: 50px;
+    font-size: 20px;
+    width: 100%;
+    border-bottom: 2px solid #e7662b;
+    text-align: left;
+}
 
+.footer-image{
+    border-top: 2px solid #e7662b;
+    background-color: rgb(229, 227, 223);
+    overflow: hidden;
+}
+
+footer .footer-adress{
+    position: absolute;
+    z-index: 57;
+    padding: 50px 80px;
+    border: 2px solid #e7662b;
+    border-bottom: 2px solid #fff;
+    bottom: -2px;
+    background-color: #fff;
+    right: 100px;
+}
+
+footer p:nth-child(3){
+    text-align: right;
+}
 
