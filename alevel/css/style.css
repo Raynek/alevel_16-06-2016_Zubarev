@@ -64,6 +64,10 @@ header{
     z-index: 19999;
 }
 
+header .header-btn{
+    display: none;
+}
+
 header .block-left{
     float: left;
 }

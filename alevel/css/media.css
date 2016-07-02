@@ -1,1 +1,218 @@
-@media screen and (max-width: 1280px) {  }
+
+@media (min-width: 320px) and (max-width: 975px){
+    header .block-right .menu{
+        display: none;
+    }
+    main .block-left  {
+        width: 100%;
+        text-align: center;
+    }
+    main .block-left .title-box .double-title::before {
+        content: attr(data-title);
+        color: #E7662B;
+        position: absolute;
+        font-size: 20px;
+        text-align: left;
+        display: block;
+        width: 100%;
+        line-height: 57px;
+        margin-left: 40%;
+    }
+    
+    main .block-left .level-box{
+        margin-top: -60px;
+    }
+    
+    main .block-right{
+        width: 100%;
+        margin-top: 30px;
+    }
+    
+    .course-container {
+       border: 5px solid #e7662b; 
+    }
+    
+    .course-container{
+        margin-top: -20px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .course-info .course-info-item {
+        width: 100%;
+        height: 60%
+    }
+    .course-info{
+        width: 90%
+    }
+    
+    .course-info .money,
+    .course-info .data,
+    .course-info .time,
+    .course-info .duration{
+        background-position: 8% 80%;
+    }
+    
+    .course-info .data span:first-child, .time span:first-child{
+        margin-left: 10% !important;
+    }
+    
+    .course-info-btn{
+        width:200px;
+        margin: 0 0 -15px 35%;
+        font-size: 0.8em;
+        height: 40px;
+        line-height: 40px;
+    }
+    .course-programm-items{
+        width: 50%;
+    }
+    
+    .course-programm{
+        width: 90%;
+    }
+    
+    .course-programm  .course-programm-items:nth-child(3){
+        margin-top: 30px;
+    }
+    
+    .course-title{
+        font-size: 1em;
+    }
+    
+    .course-title:before{
+        font-size: 2.8em;
+    }
+    .form-inner{
+        margin-top: 70px;
+        font-size: 0.7em;
+        width: 100%;
+    }
+    
+    .form-inner .form-container{
+        width: 90%;
+    }
+    .form-inner .form-input-field{
+        font-size: 1em;
+    }
+    
+    .form-inner .field1{
+        width: 85%;
+    }
+
+    .form-inner .field2{
+        width: 60%;
+        }
+    .form-inner a{
+        font-size: 0.7em;
+        width: 60%;
+        height: 40px;
+        line-height: 40px;
+    }
+    
+     footer{
+        margin-bottom: 2%;
+    }
+}       
+
+@media (min-width: 320px) and (max-width: 760px){
+    header .block-right .contacts{
+        display: none;
+    }
+    
+    header{
+        padding: 5px;
+        height: 60px;
+    }
+    
+    header .header-btn{
+        display: block;
+        background: #64c1cc;
+        color: #fff;
+        height: 35px;
+        line-height: 35px;
+        padding: 0 5px;
+        text-transform: uppercase;
+        -webkit-transition: .3s;
+        transition: .3s;
+        width: 250px;
+        text-align: center;
+        border: 1px solid #333;
+        margin-top: -10px;
+    }
+    
+    header .header-btn:hover{
+        background-color: #0c9eaf;
+    }
+    
+    header .block-right{
+        margin-right: 10px;
+    }
+    
+    header .logo img{
+        height: 65%;
+        width: 65%;
+    }
+    
+    .course-programm-items{
+        width: 100%;
+    }
+    
+    .course-programm  .course-programm-items:nth-child(2){
+        margin-top: 20px;
+    }
+    
+    .course-programm  .course-programm-items:first-child{
+        margin-top: 10px;
+    }
+    
+    footer .footer-adress{
+        position: static;
+        font-size: 0.7em;
+        text-align: center;
+        padding: 5% 10%;
+    }
+    
+    footer p:nth-child(3){
+        text-align: center;
+        padding-left: 20%;
+    }
+    
+}
+
+@media (min-width: 320px) and (max-width: 498px){
+    
+     header .header-btn{
+        display: block;
+        background: #64c1cc;
+        color: #fff;
+        height: 30px;
+        line-height: 30px;
+        padding: 0 3px;
+        text-transform: uppercase;
+        -webkit-transition: .3s;
+        transition: .3s;
+        width: 150px;
+        text-align: center;
+        border: 1px solid #333;
+        margin-top: -5px;
+        font-size: 0.6em;
+    }
+    
+    .course-info .money,
+    .course-info .data,
+    .course-info .time,
+    .course-info .duration{
+        background-size: 25%;
+        font-size: 0.8em;
+        line-height: 80px;
+    }
+    .course-data span{
+        font-size: 1em;
+    }
+    
+    .course-data .course-data-time{
+        font-size: 1.5em;
+        display: block;
+    }
+}
