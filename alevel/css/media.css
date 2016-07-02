@@ -145,13 +145,23 @@
         background-color: #0c9eaf;
     }
     
+    
     header .block-right{
-        margin-right: 10px;
+        margin-right: 2%;
+        height: 100%;
     }
     
+    header .block-left{
+        width: 110px;
+        height: 35px;
+        margin-top: 2%;
+    }
+    
+    
+    
     header .logo img{
-        height: 65%;
-        width: 65%;
+        height: 100%;
+        width: 100%;
     }
     
     .course-programm-items{
@@ -215,4 +225,28 @@
         font-size: 1.5em;
         display: block;
     }
+    
+    main .block-left .title-box .double-title{
+    color: rgba(12, 158, 175, 0.3);
+    font-family: GothamProBlack;
+    font-size: 38px;
+    position: relative;
+    margin-bottom: 80px;
+    margin-right: 10px;
+        text-align: center;
+
+    }
+    
+    main .block-left .title-box .double-title::before {
+    content: attr(data-title);
+    color: #E7662B;
+    position: absolute;
+    font-size: 15px;
+    text-align: center;
+    display: block;
+    width: 100%;
+    line-height: 40px;
+        margin: 0 auto;
+}
+
 }
