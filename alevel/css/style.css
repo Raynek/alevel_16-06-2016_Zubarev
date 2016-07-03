@@ -4,6 +4,11 @@
 	box-sizing: border-box;
 }
 
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
 
 @font-face {
     font-family: 'GothamProRegular';
@@ -231,7 +236,7 @@ main:after {
 }
 
 .course-info .money{
-    background: url(/alevel_16-06-2016_Zubarev/alevel/img/money.png) no-repeat 35px 25px;
+    background: url(../img/money.png) no-repeat 35px 25px;
 }
 
 .course-info .course-info-item span:first-child {
@@ -240,15 +245,15 @@ main:after {
 }
 
 .course-info .duration{
-    background: url(/alevel_16-06-2016_Zubarev/alevel/img/calendar.png) no-repeat 35px 25px;
+    background: url(../img/calendar.png) no-repeat 35px 25px;
 }
 
 .course-info .data{
-    background: url(/alevel_16-06-2016_Zubarev/alevel/img/desktop.png) no-repeat 75px 25px;
+    background: url(../img/desktop.png) no-repeat 75px 25px;
 }
 
 .course-info .time{
-    background: url(/alevel_16-06-2016_Zubarev/alevel/img/clock.png) no-repeat 75px 25px;
+    background: url(../img/clock.png) no-repeat 75px 25px;
 }
 
 .course-info .data span:first-child, .time span:first-child{
@@ -278,6 +283,8 @@ main:after {
     bottom: 0;
     margin: 0 0 -15px 290px;
     z-index: 2;
+    -webkit-box-shadow: 0 0 13.95px 1.05px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0 0 13.95px 1.05px rgba(0,0,0,0.15);
     box-shadow: 0 0 13.95px 1.05px rgba(0,0,0,.15);
 }
 
@@ -412,6 +419,8 @@ main:after {
     width: 360px;
     text-align: center;
     border: 1px solid #333;
+    -webkit-box-shadow: 0 0 13.95px 1.05px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0 0 13.95px 1.05px rgba(0,0,0,0.15);
     box-shadow: 0 0 13.95px 1.05px rgba(0,0,0,.15);
     font-size: 20px;
 }
