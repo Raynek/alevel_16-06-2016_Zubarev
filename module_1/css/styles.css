@@ -1,0 +1,470 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html, body{
+	height: 100%;
+	font-size: 14px;
+	color: #6b6b6b;
+	background-color: #f2f2f2;
+	font-family: "Roboto slab", sans-serif;
+	
+}
+
+a {
+	text-decoration: none;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab&subset=latin,cyrillic);
+
+.wrapper{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+
+}
+
+.content{
+	flex: 1 0 auto;
+	position: relative;
+}
+/*###################  Header  #################*/
+
+.header-wrapp{
+	width: 100%;
+	height: 75px;
+	position: fixed; 
+	background-color: #363636;
+	z-index: 19999;
+	top: 0;
+	left: 0;
+}
+
+header .menu-bars{
+	display: none;
+}
+
+header{
+	max-width: 1170px;
+	height: 75px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	margin: 0 auto;
+}
+
+header menu a{
+	text-transform: uppercase;
+	color: #fff;
+	transition: linear 0.3s;
+	font-weight: bold;
+}
+
+header menu a:hover{
+	color: #DA4453;
+}
+
+header menu a:active{
+	color: #DA4453;
+}
+
+header menu{
+	list-style: none;
+	margin-right: 10px;
+}
+
+header menu li{
+	display: inline-block;
+	margin: 20px;
+}
+
+header .logo{
+	color: #DADADA;
+	font-size: 20px;
+	font-weight: bold;
+	margin-left: 30px;
+}
+
+
+/*#################   Slider   ################*/
+
+
+.container{
+	width: 100%;
+	margin-top: 75px;	background:url(../images/slider_image.jpg) no-repeat 100%;
+	background-size: cover;
+	display: flex;
+}
+.slider{
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+.slider-title{
+	background:  rgba(218, 68, 83, 0.7);
+	margin-top: 150px;
+	margin-left: 30px;
+	display: inline-block;
+	
+}
+
+.slider-title h1{
+	font-size: 24px;
+	font-weight: bold;
+	color: #fff;
+	padding: 12px 20px;
+	
+}
+
+.slider-content{
+	background: rgba(59, 59, 59, 0.8);
+	margin-bottom: 50px;
+	width: 50%;
+	line-height: 20px;
+	margin-left: 30px;
+}
+
+.slider-content p{
+	color: #DDDDDD;
+	padding: 12px 20px;
+}
+
+/*############   Main content ############*/
+
+main{
+	max-width: 1170px;
+	margin: 0 auto;
+	display: flex;
+}
+.post-wrap{
+    border: 2px solid #DADADA;
+    border-radius: 4px;
+    margin-top: -2px;
+    padding: 40px;
+    background: #fff;
+}
+main .left-side{
+	max-width: 780px;
+	margin: 0 30px;
+	color: #6b6b6b;
+}
+
+main .left-side h1 a{
+	color: #444444;
+	transition: linear 0.3s;
+    font-size: 1.8em;
+    display: inline-block;
+    font-weight: bold;
+}
+
+main .left-side h1 a:hover{
+	color: #DA4453;
+}
+
+main .left-side .post-content p{
+	font-size: 13px;
+    line-height: 1.3;
+}
+
+main .post-info{
+    margin: 20px 0;
+}
+
+main .post-info a {
+    color: grey;
+    margin-left: 15px;
+}
+
+main .post-info a:first-child{
+    margin-left: 0;
+}
+main .post-info a:hover {
+    color: darkgray;
+}
+
+main .post-info a span {
+    margin-left: 5px;
+}
+
+main .post-btn{
+	background: #DA4453;
+	padding: 11px 13px;
+	color: #fff;
+	font-size: 13px;
+	transition: linear 0.5s;
+	display: block;
+	width: 96px;
+	text-align: center;
+	height: 36px;
+    border-radius: 3px;
+}
+
+main .post-btn:hover{
+	background: #000000;
+}
+
+main .post .button{
+	width: 99px; 
+	margin-top: 20px;
+	height: 39px;
+
+}
+
+.button{
+   border-radius: 4px;
+    margin-left: 86%
+}
+
+.button:hover{
+	border: 2px solid black;
+}
+main .post{
+	padding: 45px 0;
+}
+
+main .post a img{
+	height: 100%;
+	width: 100%;
+	transition: opacity 0.8s linear 0.3s;
+}
+
+main .post a img:hover{
+	opacity: 0.5;
+}
+
+
+/*############   Right side ###########*/
+
+
+main .right-side{
+	width: 390px;
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+    background-color: #fff;
+    border: 1px solid #dadada;
+    border-radius: 4px;
+    height: 100%;
+    margin-top: 45px;
+}
+
+main .right-side h2{
+	font-size: 14px;
+	font-weight: bold;
+	color: #636467;
+	margin-bottom: 25px;
+    text-transform: uppercase;
+    margin-top: 70px;
+}
+
+main .right-side .soc-net a {
+	color: #fff;
+	margin: 0 5px 5px 0;
+}
+
+main .right-side .soc-net a i{
+	height: 40px;
+	width: 40px;
+	background-color: #c1c0c0;
+	text-align: center;
+	line-height: 40px;
+	transition: linear 0.3s;
+	font-size: 18px;
+	border-radius: 3px;
+}
+
+main .right-side a .fa-twitter:hover{
+	color: #55acee;
+}
+
+main .right-side a .fa-facebook:hover{
+	color: #4265b9;
+}
+
+main .right-side a .fa-youtube:hover{
+	color: #df3333;
+}
+
+main .right-side a .fa-google-plus:hover{
+	color: #d62408;
+}
+
+main .right-side a .fa-vk:hover{
+	color: #5b8bb4;
+}
+
+main .right-side .comments{
+	color: #c1c0c0;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+
+}
+
+main .right-side .comment{
+    margin: 5px;
+    line-height: 50px;
+    border-bottom: 2px solid #f2f2f2;
+}
+
+main .right-side .comment:first-child{
+    margin-top: 0;
+}
+main .right-side .comments a{
+    color: #363636;
+    
+}
+
+main .right-side .comments a span:hover{
+    color: #636467;
+}
+
+main .right-side .nickname {
+    font-weight: bold;
+}
+main .right-side .tags {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+main .right-side .tags-items{
+	background: #dadada;
+	transition: linear 0.3s;
+	margin-bottom: 4px;
+	padding: 6px 7px;
+	border-radius: 3px;
+    margin-right: 7px;
+	
+}
+
+main .right-side .tags-items:hover{
+	background: #da4453;
+}
+
+main .right-side .tags-items a{
+	font-size: 12px;
+	color: #fff;
+}
+
+main .right-side h2:first-child{
+    margin-top: 0;
+}
+/*###############   Footer  ###############*/
+
+footer{
+	width: 100%;
+	background: #1f1f1f;
+	flex: 0 0 auto;
+	display: flex;
+	align-content: center;
+}
+
+.footer-wrap{
+    width: 1170px;
+	height: 75px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	margin: 0 auto;
+}
+
+.footer-menu a{
+	color: #DADADA;
+	text-transform: uppercase;
+	padding: 10px 15px;
+	font-size: 12px;
+	transition: linear 0.3s;
+}
+
+.footer-menu a:hover{
+	color: #fff;
+}
+
+footer .cp1{
+	font-size: 12px;
+	color: #dadada;
+}
+
+footer .cp2{
+	font-size: 12px;
+	color: #999;
+}
+
+footer menu a{
+	text-transform: uppercase;
+	color: #fff;
+	transition: linear 0.3s;
+	font-weight: bold;
+}
+
+footer .footer-wrap .footer-menu li a:hover{
+	color: #DA4453;
+}
+
+footer .footer-wrap .footer-menu li a:active{
+	color: #DA4453;
+}
+
+footer menu{
+	list-style: none;
+    display: flex;
+}
+
+footer menu li{
+	display: inline-block;
+	margin: 20px 10px;
+}
+
+footer .menu-bars{
+	display: none;
+}
+
